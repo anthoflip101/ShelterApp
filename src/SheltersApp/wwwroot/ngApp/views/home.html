@@ -1,0 +1,16 @@
+<h2>Home</h2>
+<p>
+    {{controller.message}}
+</p>
+<strong>
+    <ul>
+
+        <li ng-repeat="category in controller.categories">
+            <h3>{{category.animalType}}</h3>
+            <ol ng-repeat="animals in category.animal">
+                <h4><strong><a ui-sref="Details({ id: animals.id })">{{animals.name}}</a> - {{animals.breed}}</strong></h4>
+            </ol>
+        </li>
+
+    </ul>
+</strong>

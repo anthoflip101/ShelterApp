@@ -1,0 +1,22 @@
+﻿<h2>Adding Animal</h2>
+
+<form ng-submit="controller.addAnimal()">
+    <div>
+        <label for="name">Name:</label>
+        <input id="name" ng-model="controller.animalToCreate.name" />
+    </div>
+    <div>
+        <label for="bio">Bio:</label>
+        <input id="bio" ng-model="controller.animalToCreate.bio" />
+    </div>
+    <div>
+        <label for="breed">Breed:</label>
+        <input id="breed" ng-model="controller.animalToCreate.breed" />
+    </div>
+    <div>
+        <label for="image">Image:</label>
+        <input id="image" ng-model="controller.animalToCreate.image" />
+        Please upload URL only!
+    </div>
+    <input type="submit" value="Save" />
+</form>
